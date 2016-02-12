@@ -2,6 +2,8 @@
 
 EMOCon 2016 s/s Presentation
 
+[발표 URL](http://pluu.github.io/EMOCon2016ss-NotAwesome)
+
 ## Dev setup
 
 `bower install` is the obvious first thing to do.
