@@ -1,0 +1,23 @@
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+<link rel="import" href="q-and-a-style.html">
+
+<dom-module id="q-and-a">
+  <template>
+    <style include="q-and-a-style"></style>
+    <iron-ajax url="data/pre_q_and_a.json" last-response="{{data}}" handle-as="json" auto></iron-ajax>
+    <template is="dom-repeat" items="[[data]]" as="item">
+      <div class="item">
+        <div class="pad">
+          <div class="q_and_a_name">[[item.name]]</div>
+          <div class="q_and_a_contents">[[item.contents]]</div>
+        </div>
+      </div>
+    </template>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'q-and-a'
+    });
+  </script>
+</dom-module>

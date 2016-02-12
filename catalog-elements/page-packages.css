@@ -1,0 +1,42 @@
+.content {
+  display: block;
+}
+
+.packages {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1132px) {
+  .packages {
+    max-width: 880px;
+  }
+}
+
+@media (max-width: 912px) {
+  .packages {
+    max-width: 660px;
+  }
+}
+
+@media (max-width: 692px) {
+  .packages {
+    max-width: 440px;
+  }
+}
+
+div.package {
+  display: inline-block;
+  width: 220px;
+  margin: 8px;
+}
+
+@media (max-width: 489px) {
+  div.package {
+    width: calc(100% - 16px);
+  }
+}
+
+.search.active {
+  left: 15px;
+}

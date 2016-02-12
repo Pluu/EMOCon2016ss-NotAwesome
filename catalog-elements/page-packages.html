@@ -1,0 +1,54 @@
+<link rel="import" href="../../iron-ajax/iron-ajax.html">
+<link rel="import" href="theme-color.html">
+
+<dom-module id="page-packages">
+  <link rel="import" type="css" href="page-packages.css">
+  <link rel="import" type="css" href="package-tile.css">
+  <template>
+    <iron-ajax id="ajax" url="[[path]]" last-response="{{packages}}" handle-as="json" auto></iron-ajax>
+    <div class="content fit">
+      <div class="packages layout horizontal wrap">
+        <template is="dom-repeat" items="[[packages]]" as="item">
+          <div class="package flex-none">
+            <theme-color id="content" color="[[item.color]]" class="vertical layout" themed themed-border>
+              <span class="importance">[[item.importance]]</span>
+              <h2 class="title" extended$="[[_extendedTitle(package)]]">[[item.title]]</h2>
+              <hr themed-reverse>
+              <p class="tagline">[[item.contents]]</p>
+            </theme-color>
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'page-packages',
+
+    properties: {
+      path: {
+        type: String
+      }
+    },
+
+    attached: function() {
+      var tiles = this.parentNode.querySelectorAll('package-tile');
+      var index = Array.prototype.indexOf.call(tiles, this);
+      setTimeout(function() {
+        this.classList.add('active');
+      }.bind(this), (index + 1) * 50);
+    },
+
+    _extendedTitle: function(p) {
+      if (p.title.length > 20) return true;
+    },
+
+    ready: function() {
+      this.$.ajax.url = this.path;
+      this.$.ajax.generateRequest();
+      console.log(this.path);
+    }
+  });
+</script>

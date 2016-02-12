@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "Mobile Project",
+  "short_name": "Mobile Project",
+  "version": "1.0.0",
+  "background_color": "#3E4EB8",
+  "display": "standalone",
+  "theme_color": "#2E3AA1"
+}
