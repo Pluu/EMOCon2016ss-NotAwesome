@@ -125,34 +125,33 @@ prevent syntax highlighting code blocks, respectively:
           <content select="google-codelab-step"></content>
         </neon-animated-pages>
 
+        <footer id="controls" hidden$="[[noArrows]]">
+          <div class="fabs layout horizontal justified">
+            <paper-fab raised class="navbutton prevbutton" icon="chevron-left"
+              on-tap="selectPrevious"
+              title="Previous step"
+              disabled$="{{_isFirstStep(selected)}}">
+            </paper-fab>
+
+            <div>
+              <template is="dom-if" if="{{_showNextFab(selected, steps)}}" strip-whitespace>
+                <paper-fab icon="chevron-right" raised class="navbutton nextbutton"
+                  title="{{_nextFabTitle(selected)}}"
+                  on-tap="selectNext">
+                </paper-fab>
+              </template>
+
+              <template is="dom-if" if="{{_showDoneFab(selected, steps)}}" strip-whitespace>
+                <paper-fab icon="done" raised class="navbutton donebutton"
+                  on-tap="_goToHome" title="Complete EMOCon">
+                </paper-fab>
+              </template>
+            </div>
+          </div>
+        </footer>
       </paper-scroll-header-panel>
 
     </paper-drawer-panel>
-
-    <footer id="controls" hidden$="[[noArrows]]">
-      <div class="fabs layout horizontal justified">
-        <paper-fab raised class="navbutton prevbutton" icon="chevron-left"
-          on-tap="selectPrevious"
-          title="Previous step"
-          disabled$="{{_isFirstStep(selected)}}">
-        </paper-fab>
-
-        <div>
-          <template is="dom-if" if="{{_showNextFab(selected, steps)}}" strip-whitespace>
-            <paper-fab icon="chevron-right" raised class="navbutton nextbutton"
-              title="{{_nextFabTitle(selected)}}"
-              on-tap="selectNext">
-            </paper-fab>
-          </template>
-
-          <template is="dom-if" if="{{_showDoneFab(selected, steps)}}" strip-whitespace>
-            <paper-fab icon="done" raised class="navbutton donebutton"
-              on-tap="_goToHome" title="Complete EMOCon">
-            </paper-fab>
-          </template>
-        </div>
-      </div>
-    </footer>
 
     <paper-dialog id="resumeDialog" modal>
       <h2>Would you like to resume where you left off?</h2>
