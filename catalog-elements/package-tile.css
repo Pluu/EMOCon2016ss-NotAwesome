@@ -63,6 +63,12 @@ hr {
   transition-timing-function: var(--material-curve-320);
 }
 
+#header {
+  margin: 10px;
+  background: #000;
+  height: 2px;
+}
+
 :host(.active) hr {
   width: 100%;
   background: #606060;
