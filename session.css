@@ -1,0 +1,14 @@
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
+}
+
+img.round-img {
+  border-radius: 6px;
+}
+
+.divider {
+  border: 0;
+  border-bottom: 1px solid #666;
+  opacity: 0.6;
+}

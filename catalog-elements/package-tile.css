@@ -15,7 +15,7 @@
   position: relative;
   width: 100%;
   background: #fafafa;
-  border-radius: 2px;
+  border-radius: 5px;
   box-sizing: border-box;
   overflow: hidden;
   transition: box-shadow 200ms;
@@ -109,7 +109,7 @@ hr {
   transition-timing-function: var(--material-curve-320);
   transform: translate(-50px, 0);
   opacity: 0;
-  font-size: 13px;
+  font-size: 14px;
   margin: 10px 0 0 0;
   line-height: 20px;
   height: 40px;
