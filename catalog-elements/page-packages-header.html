@@ -8,9 +8,11 @@
     <iron-ajax id="ajax" url="[[path]]" on-response="_handleResponse" handle-as="json" auto></iron-ajax>
     <div class="content fit">
       <div class="packages layout horizontal wrap">
-        <h2 style="margin-left:10px;">[[key]]</h2>
-        <hr id="header">
-        <template is="dom-repeat" items="[[items]]" as="item">
+        <template is="dom-if" if="{{key}}">
+          <h2 style="margin-left:10px;">[[key]]</h2>
+          <hr id="header">
+        </template>
+        <template id="valueList" is="dom-repeat" items="[[items]]" as="item">
           <div class="package flex-none">
             <theme-color id="content" color="[[item.color]]" class="vertical layout" themed themed-border>
               <h2 class="title" extended$="[[_extendedTitle(package)]]">[[item.title]]</h2>
@@ -34,8 +36,12 @@
       },
       key: {
         type: String,
-        value: "ALL"
+        value: ""
       }
+    },
+
+    _show: function() {
+      return this.key != "";
     },
 
     _filter: function(list, key) {
@@ -47,13 +53,12 @@
     _handleResponse: function(req) {
       var data = req.detail.response;
 
-      if (this.key != "ALL") {
+      if (this._show()) {
         _data = this._filter(data, this.key);
       } else {
         _data = data;
       }
-      var t = Polymer.dom(this.root).querySelector('template');
-      t.items = _data;
+      this.$.valueList.items = _data;
     },
 
     attached: function() {
