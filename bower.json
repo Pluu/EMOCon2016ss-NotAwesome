@@ -24,7 +24,8 @@
     "paper-toolbar": "PolymerElements/paper-toolbar#^1.0.4",
     "google-prettify": "google/code-prettify",
     "iron-list": "PolymerElements/iron-list#^1.2.3",
-    "color": "~2.5.0"
+    "color": "~2.5.0",
+    "iron-image": "PolymerElements/iron-image#^1.2.2"
   },
   "devDependencies": {
     "iron-test-helpers": "PolymerElements/iron-test-helpers#^1.0.2",
