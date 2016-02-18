@@ -1,0 +1,88 @@
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="theme-color.html">
+
+<dom-module id="page-packages-fit">
+  <link rel="import" type="css" href="page-packages.css">
+  <link rel="import" type="css" href="package-tile.css">
+  <template>
+    <iron-ajax id="ajax" url="[[path]]" on-response="_handleResponse" handle-as="json" auto></iron-ajax>
+    <div class="content fit">
+      <div class="packages layout horizontal wrap">
+        <template is="dom-if" if="{{key}}">
+          <h2 style="margin-left:10px;">[[key]]</h2>
+          <hr id="header">
+        </template>
+        <template id="valueList" is="dom-repeat" items="[[items]]" as="item">
+          <div class="package-fit flex-none">
+            <theme-color id="content" color="[[item.color]]" class="vertical layout" themed themed-border>
+              <template is="dom-if" if="{{!key}}">
+                <span class="importance">[[item.importance]]</span>
+              </template>
+              <h2 class="title" extended$="[[_extendedTitle(package)]]">[[item.title]]</h2>
+              <hr themed-reverse>
+              <ul>
+                <template is="dom-repeat" items="[[item.contents]]" as="content">
+                    <li>[[content]]</li>
+                </template>
+              </ul>
+            </theme-color>
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'page-packages-fit',
+
+    properties: {
+      path: {
+        type: String
+      },
+      key: {
+        type: String,
+        value: ""
+      }
+    },
+
+    _show: function() {
+      return this.key != "";
+    },
+
+    _filter: function(list, key) {
+      return list.filter(function(item) {
+        return item.importance == key;
+      });
+    },
+
+    _handleResponse: function(req) {
+      var data = req.detail.response;
+
+      if (this._show()) {
+        _data = this._filter(data, this.key);
+      } else {
+        _data = data;
+      }
+      this.$.valueList.items = _data;
+    },
+
+    attached: function() {
+      var tiles = this.parentNode.querySelectorAll('package-tile');
+      var index = Array.prototype.indexOf.call(tiles, this);
+      setTimeout(function() {
+        this.classList.add('active');
+      }.bind(this), (index + 1) * 50);
+    },
+
+    _extendedTitle: function(p) {
+      if (p.title.length > 20) return true;
+    },
+
+    ready: function() {
+      this.$.ajax.url = this.path;
+      this.$.ajax.generateRequest();
+    }
+  });
+</script>

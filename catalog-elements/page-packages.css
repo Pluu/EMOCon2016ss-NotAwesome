@@ -31,6 +31,12 @@ div.package {
   margin: 8px;
 }
 
+div.package-fit {
+  display: inline-block;
+  width: 100%;
+  margin: 8px;
+}
+
 @media (max-width: 489px) {
   div.package {
     width: calc(100% - 16px);
