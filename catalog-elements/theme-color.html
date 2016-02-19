@@ -6,12 +6,16 @@
     properties: {
       color: {type: String, notify: true},
       textColor: {type: String, notify: true, computed: 'computeTextColor(color)'},
-      outline: {type: Boolean}
+      outline: {type: Boolean},
+      color2: {type: String}
     },
     observers: [
       'colorContent(color)'
     ],
     computeTextColor: function(color) {
+      if (this.color2) {
+        return this.color2;
+      }
       if (this.color) {
         var lightness = one.color(this.color).lightness();
         return (lightness > 0.5) ? 'rgba(0,0,0,0.8)' : 'rgba(255,255,255,1)';

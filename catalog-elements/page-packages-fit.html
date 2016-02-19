@@ -14,7 +14,9 @@
         </template>
         <template id="valueList" is="dom-repeat" items="[[items]]" as="item">
           <div class="package-fit flex-none">
-            <theme-color id="content" color="[[item.color]]" class="vertical layout" themed themed-border>
+            <theme-color id="content" color="[[item.color]]" class="vertical layout"
+              color2="[[item.realTextColor]]"
+              themed themed-border>
               <template is="dom-if" if="{{!key}}">
                 <span class="importance">[[item.importance]]</span>
               </template>
@@ -38,13 +40,8 @@
     is: 'page-packages-fit',
 
     properties: {
-      path: {
-        type: String
-      },
-      key: {
-        type: String,
-        value: ""
-      }
+      path: { type: String },
+      key: { type: String, value: "" }
     },
 
     _show: function() {
