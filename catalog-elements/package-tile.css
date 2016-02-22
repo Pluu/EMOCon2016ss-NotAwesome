@@ -69,6 +69,12 @@ hr {
   height: 2px;
 }
 
+#header2 {
+  margin: 10px;
+  background: #263238;
+  height: 2px;
+}
+
 :host(.active) hr {
   width: 100%;
   background: #606060;

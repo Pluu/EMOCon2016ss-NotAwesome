@@ -12,3 +12,10 @@ img.round-img {
   border-bottom: 1px solid #666;
   opacity: 0.6;
 }
+
+.pre-higlight {
+  color: #FFFFFF;
+  padding: 4px;
+  font-weight: bold;
+  background-color: #d50000;
+}
