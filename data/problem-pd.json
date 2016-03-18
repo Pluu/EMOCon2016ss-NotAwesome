@@ -1,0 +1,32 @@
+[
+  {
+    "importance": "NORMAL",
+    "title": "법적 문제",
+    "color": "#81C784",
+    "contents": "서비스 관련 정보 수집"
+  },
+  {
+    "importance": "NORMAL",
+    "title": "모바일 생태계",
+    "color": "#81C784",
+    "contents": "모바일 UI, Scroll"
+  },
+  {
+    "importance": "WARNING",
+    "title": "더 나은 기획서",
+    "color": "#FFB74D",
+    "contents": "UX & UI, Animation, 실패 케이스 고려"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "Service",
+    "color": "#B71C1C",
+    "contents": "무슨 서비스인가?"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "완료하면 끝인가?",
+    "color": "#B71C1C",
+    "contents": "서비스 방향성, 그 후 계획"
+  }
+]

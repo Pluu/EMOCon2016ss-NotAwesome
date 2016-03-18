@@ -1,0 +1,38 @@
+[
+  {
+    "importance": "NORMAL",
+    "title": "User",
+    "color": "#81C784",
+    "contents": "사용자에게 맞는 디자인"
+  },
+  {
+    "importance": "NORMAL",
+    "title": "Design Skill",
+    "color": "#81C784",
+    "contents": "시안 결과물"
+  },
+  {
+    "importance": "NORMAL",
+    "title": "Trends",
+    "color": "#81C784",
+    "contents": "나는 바뀐다 ... 매년"
+  },
+  {
+    "importance": "WARNING",
+    "title": "Concept",
+    "color": "#FFB74D",
+    "contents": "무엇을 디자인하고 있는가?"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "Multi Device",
+    "color": "#B71C1C",
+    "contents": "지원 단말 x 결과물"
+  },
+  {
+    "importance": "REAL CRITICAL",
+    "title": "Select",
+    "color": "#B71C1C",
+    "contents": "누가 결정하는가"
+  }
+]

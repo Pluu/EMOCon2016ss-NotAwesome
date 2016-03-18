@@ -1,0 +1,32 @@
+[
+  {
+    "importance": "NORMAL",
+    "title": "UI & UX",
+    "color": "#81C784",
+    "contents": "각 생태계의 디자인을 고려"
+  },
+  {
+    "importance": "NORMAL",
+    "title": "Communication",
+    "color": "#81C784",
+    "contents": "이야기합시다"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "이거 해주세요",
+    "color": "#B71C1C",
+    "contents": "하늘에서 내려오는 일"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "고집",
+    "color": "#B71C1C",
+    "contents": "고집 하나 > 10배 일거리"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "역시 사람",
+    "color": "#B71C1C",
+    "contents": "사람 부족"
+  }
+]

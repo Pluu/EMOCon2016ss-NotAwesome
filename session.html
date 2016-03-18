@@ -20,7 +20,22 @@ the License.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
   <link rel="import" href="google-codelab/google-codelab-elements.html">
+  <link rel="import" href="q-and-a.html">
+  <link rel="import" href="catalog-elements/page-packages.html">
+  <link rel="import" href="catalog-elements/page-packages-header.html">
+  <link rel="import" href="catalog-elements/page-packages-fit.html">
   <link rel="stylesheet" href="session.css">
+  <style is="custom-style">
+    paper-button.custom {
+      color: white;
+    }
+    paper-button.indigo {
+      background-color: var(--paper-indigo-600);
+    }
+    paper-button.green {
+      background-color: var(--paper-green-600);
+    }
+  </style>
 </head>
 <body unresolved class="fullbleed">
   <google-codelab title="Not Awesome"
@@ -28,9 +43,376 @@ the License.
                   environment="web">
 
 <google-codelab-step label="Overview">
+  <center style="margin-top: 175px; margin-bottom: 175px;">
+    <h1>Not Awesome</h1>
+    <h1><font color="#6ab344">Android</font></h1>
+    <p>
+      <h3>~ 모바일 Project 이야기들 ~</h3>
+    </p>
+  </center>
+</google-codelab-step>
+
+<google-codelab-step label="Who...?">
+  <p>
+    <div>
+      <img src="img/profile.jpg" class="round-img" style="max-width: 230px"/>
+    </div>
+    <h2>Pluu (@pluulove)</h2>
+    <ul class="checklist">
+      <li><strong>Android Programmer</strong></li>
+      <li>2009 ~ 2011 in Tokyo</li>
+      <li>2011 ~ Now in Seoul</li>
+    </ul>
+  </p>
+  <div>
+    <paper-button raised class="custom indigo">
+      <iron-icon icon="mail"></iron-icon>
+      <a href="mailto:pluulove@gmail.com">pluulove@gmail.com</a>
+    </paper-button>
+    <paper-button raised class="custom green">
+      <iron-icon icon="home"></iron-icon>
+      <a target="_blank" href="http://pluu.github.io/">pluu.github.io</a>
+    </paper-button>
+  </div>
+</google-codelab-step>
+
+<google-codelab-step label="말말말">
+  <h3 class="faq">프로젝트 한 곳</h3>
+  <ul>
+    <li>대기업 파견</li>
+    <li>SI</li>
+    <li>자사 서비스</li>
+  </ul>
+
+  <h3 class="faq">그래서 결과는 ...</h3>
+  <ul>
+    <li>사라짐</li>
+    <li>리뉴얼</li>
+    <li>중지</li>
+  </ul>
+
+  <aside class="warning">
+    <h3 class="faq">좀 더 빨리 생각했다면...</h3>
+    <ul>
+      <li>디자인</li>
+      <li>서비스 방향</li>
+      <li>현실성 여부</li>
+    </ul>
+  </aside>
+</google-codelab-step>
+
+<google-codelab-step label="주제">
+  <h2>이유</h2>
+  <hr class="divider" />
+  <ul class="checklist">
+    <li><del>회사 디스</del></li>
+    <li>모바일 개발자 시작은 제대로 해보자<del> ... 정말 하려구?</del></li>
+  </ul>
+
+  <h2>이후에 말할 내용</h2>
+  <hr class="divider" />
+  <ul class="checklist">
+    <li><font class="pre-higlight">프로젝트 진행하면서 발생하는 문제점</font></li>
+    <li>초보 안드로이드 개발자에게 팁팁팁!</li>
+  </ul>
+</google-codelab-step>
+
+<google-codelab-step label="Hell and Heaven">
+  <h2>이상향</h2>
+  <aside class="special">
+    <ul>
+      <li>아이템 선정</li>
+      <li>시장 조사, 전략 분석</li>
+      <li>탄탄한 로드맵</li>
+      <li>아름다운 UI &amp; UX</li>
+      <li>개발 및 테스트 및 VCS</li>
+      <li>충분한 인력과 시간</li>
+    </ul>
+  </aside>
+
+  <h2>현실</h2>
+  <aside class="warning">
+    <ul>
+      <li>갑자기 내려오는 아이템</li>
+      <li>구멍이 많은 기획 컨셉 및 불투명한 행보</li>
+      <li>결정은 누군가에 의해 정해진다</li>
+      <li>개발 및 테스트 시간, 기술 가능 여부 검토</li>
+      <li>언제나 부족한 시간</li>
+      <li>싸우자, 책임회피, 아몰랑</li>
+    </ul>
+  </aside>
+</google-codelab-step>
+
+<google-codelab-step label="Design">
+  <page-packages-header path="data/problem-design.json"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Develop #1">
+  <page-packages-header path="data/problem-develop.json" key="NORMAL"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Develop #2">
+  <page-packages-header path="data/problem-develop.json" key="WARNING"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Develop #3">
+  <page-packages-header path="data/problem-develop.json" key="CRITICAL"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Project Director">
+  <page-packages-header path="data/problem-pd.json"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Another">
+  <page-packages-header path="data/problem-another.json"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="Recommend">
+  <page-packages-header path="data/problem-recommend.json"></page-packages-header>
+</google-codelab-step>
+
+<google-codelab-step label="What's Android #1">
+  <img src="./img/android-versions-3-1500x1000.jpg" style="max-width: 800px;" />
+</google-codelab-step>
+
+<google-codelab-step label="What's Android #2">
+  <div>
+    <section>
+      <h3 class="faq">장점</h3>
+      <ul>
+        <li>다양한 디바이스</li>
+        <li>높은 시장 점유율 (나라마다 다름)</li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="faq">단점</h3>
+      <ul>
+        <li>다양한 디바이스 → <font class="pre-higlight">모든 문제의 근원지</font></li>
+        <li>OS 업데이트 문제 → <font class="pre-higlight">포기하면 편합니다</font></li>
+        <li>낮은 결재율, 수익 확보 고민</li>
+        <li>
+          공대 감성 UI Components → <font class="pre-higlight">힘내세요 디자이너</font>
+          <ul>
+            <li>Material design ... <font class="pre-higlight">무거워요</font></li>
+          </ul>
+        </li>
+        <li>웹, iPhone보다 시장형성이 오래되지 않음 → <font class="pre-higlight">자주 바뀜</font></li>
+        <li>Developer Tools → <font class="pre-higlight">좋아지고 있어요</font></li>
+      </ul>
+    </section>
+  </div>
+</google-codelab-step>
+
+<google-codelab-step label="What's Android #3">
+  <h3>iPhone vs Android Trends</h3>
+  <div>
+    <img src="img/google_trends.PNG" id="round-img" style="max-width: 502px"/>
+  </div>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #1">
+  <h2>Shortcuts</h2>
+  <ul>
+    <li>
+      <a href="http://www.developerphil.com/android-studio-tips-of-the-day-roundup-1/">Android Studio Tips Of the Day</a>
+      Roundup #1 ~ #6  Shortcuts
+    </li>
+  </ul>
+  <p>
+    <img src="./img/04-callinghierarchy.gif" style="max-width: 451px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #2">
+  <h2>Capture</h2>
+  <p>
+    <ul>
+      <li>Device Caputre</li>
+    </ul>
+    <img src="./img/capture-1.png" style="max-width: 204px;" />
+
+    <ul>
+      <li>Layout Preview Caputre</li>
+    </ul>
+    <img src="./img/capture-2.png" style="max-width: 641px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #3">
+  <h2>Android Parcelable code generator</h2>
+  <ul>
+    <li>Link : <a href="https://github.com/mcharmas/android-parcelable-intellij-plugin/">Android Parcelable code generator</a></li>
+  </ul>
+  <p>
+    <img src="./img/android-parcelable-intellij-plugin.png" style="max-width: 450px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #4">
+  <h2>CodeGlance</h2>
+  <ul>
+    <li>Link : <a href="https://github.com/Vektah/CodeGlance">CodeGlance</a></li>
+  </ul>
+  <p>
+    <img src="./img/CodeGlance.png" style="max-width: 800px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #5">
+  <h2>ButterKnifeZelezny</h2>
+  <ul>
+    <li>Link : <a href="https://github.com/Vektah/CodeGlance">ButterKnifeZelezny</a></li>
+  </ul>
+  <p>
+    <img src="./img/zelezny_animated.gif" style="max-width: 712px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #6">
+  <h2>Tools Attributes</h2>
+  <ul>
+    <li><a href="http://tools.android.com/tech-docs/tools-attributes">Tools Attributes</a></li>
+    <li><a href="http://tools.android.com/tips/layout-designtime-attributes">Designtime Layout Attributes</a></li>
+  </ul>
+  <p>
+    <img src="./img/design-attributes.png" style="max-width: 769px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #7">
+  <h2>Ui Automator Viewer / Hierarchy Viewer</h2>
+  <ul>
+    <li>다른 어플리케이션의 레이아웃 구조가 궁금할 때</li>
+    <li>{ANDROID_HOME}/tools</li>
+  </ul>
+  <aside class="special">
+    <strong>버전에 따라서 사용</strong>
+    <ul>
+      <li>ICS 이상 : Ui Automator Viewer</li>
+      <li>ICS 이전 : Hierarchy Viewer</li>
+    </ul>
+  </aside>
+  <p>
+    <img src="./img/Ui-Automator-Viewer-01.PNG" style="max-width: 800px;" />
+  </p>
+  <p>
+    <img src="./img/Hierarchy-Viewer-01.PNG" style="max-width: 800px;" />
+  </p>
+
+  <aside class="warning">
+    <strong>Hierarchy Viewer</strong>
+    <ul>
+      <li>루팅된 단말이 아니면 이용 불가능 > 에뮬레이터, 지니모션</li>
+      <li>일부 앱에서 Tree 취득 시 강제 종료되는 현상 (Ex, Google Play)</li>
+    </ul>
+  </aside>
+
+  <h2>Dexplorer</h2>
+  <ul>
+    <li>Decompile Tools</li>
+  </ul>
+  <p>
+    <img src="./img/Dexplorer-01.png" style="max-width: 360px;" />
+    <img src="./img/Dexplorer-02.png" style="max-width: 360px;" />
+    <img src="./img/Dexplorer-03.png" style="max-width: 360px;" />
+    <img src="./img/Dexplorer-04.png" style="max-width: 360px;" />
+  </p>
+  <aside class="warning">
+    <strong>제약사항</strong>
+    <ul>
+      <li>루팅된 단말이 아니면 이용 불가능</li>
+    </ul>
+  </aside>
+</google-codelab-step>
+
+<google-codelab-step label="Tips #8 ~ Graphic">
+  <h2>The 16 Millisecond Per Frame Speed Limit</h2>
+  <p>
+    <img src="./img/graphic-img-1.png" style="max-width: 282px;" />
+  </p>
+
+  <h3 class="faq">Setting</h3>
+  <p>
+    <ol>
+      <li>설정 - 개발자 옵션</li>
+      <li>GPU 오버로드 표시 활성화</li>
+      <li>팝업 표시되는 경우 <strong>오버로드로 영역 표시</strong> 선택</li>
+    </ol>
+    <img src="./img/graphic-img-3.png" style="max-width: 646px;" />
+  </p>
+
+  <h3 class="faq">See</h3>
+  <p>
+    <img src="./img/graphic-img-4.png" style="max-width: 324px;" />
+  </p>
+
+  <h3 class="faq">Means</h3>
+  <p>
+    <ul>
+      <li>True color: No overdraw</li>
+      <li>Blue: Overdrawn once</li>
+      <li>Green: Overdrawn twice</li>
+      <li>Pink: Overdrawn thrice</li>
+      <li>Red: Overdrawn four or more times</li>
+    </ul>
+    <img src="./img/graphic-img-5.png" style="max-width: 402px;" />
+  </p>
+
+  <h3 class="faq">Diff</h3>
+  <p>
+    <img src="./img/graphic-img-6.png" style="max-width: 656px;" />
+  </p>
+</google-codelab-step>
+
+<google-codelab-step label="Beginner ~ Recommend">
+  <p>
+    <h2><strong>초보 안드로이드 개발자에게</strong></h2>
+  </p>
+  <page-packages-fit path="data/beginner-recommend.json"></page-packages-fit>
+</google-codelab-step>
+
+<google-codelab-step label="Beginner ~ Hell">
+  <p>
+    <h2><strong>초보 안드로이드 개발자에게</strong></h2>
+  </p>
+  <page-packages-fit path="data/beginner-recommend2.json"></page-packages-fit>
+</google-codelab-step>
+
+<google-codelab-step label="참고">
+  <ul>
+    <li>
+      <a target="_blank" href="https://www.youtube.com/user/GoogleDevelopers/featured">Google Developers</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.youtube.com/user/androiddevelopers">Android Developers</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://io2015codelabs.appspot.com/codelabs/android-performance-debug-gpu-overdraw#1">Visualizing Debug GPU Overdraw Codelab</a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.youtube.com/watch?v=T52v50r-JfE">Android Performance Patterns: Understanding Overdraw</a>
+    </li>
+    <li>
+      <a target="_blank" href="http://icdn9.digitaltrends.com/image/android-versions-3-1500x1000.jpg?ver=1">Android Version History Image</a>
+    </li>
+  </ul>
 </google-codelab-step>
 
 <google-codelab-step label="End">
+    <center style="margin-top: 200px; margin-bottom: 200px;">
+      <font size="20px"><strong>여기까지</strong></font>
+      <div style="margin-top: 20px;">
+        신세한탄 발표
+      </div>
+      <div>
+        <p>
+          <paper-button raised class="custom indigo">
+            <iron-icon icon="thumb-up"></iron-icon>
+            <a href="http://pluu.github.io/EMOCon2016ss-NotAwesome/">발표 자료</a>
+          </paper-button>
+        </p>
+      </div>
+    </center>
 </google-codelab-step>
   </google-codelab>
 </body>

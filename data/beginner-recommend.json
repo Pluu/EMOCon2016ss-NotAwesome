@@ -1,0 +1,27 @@
+[
+  {
+    "importance": "RECOMMEND",
+    "title": "Better Develop",
+    "color": "#EEEEEE",
+    "contents": [
+       "공부하세요 (ex. UI Layout, Animation, Rx ... etc)",
+       "안드로이드 시작한다면 Android Developer, Udacity",
+       "라이브러리는 The Android Arsenal이 갑오브갑",
+       "시작은 예제로, 점점 서비스 및 복잡한 걸 만들어보세요",
+       "Project Copy & Paste 삽질이라면 Build Variants로 줄이자",
+       "Fix Size는 최소화, 상대 크기 처리",
+       "기획서, 디자인 시안을 평가하라",
+       "테스트 코드 작성"
+     ]
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "Made in you",
+    "color": "#9A2617",
+    "realTextColor": "#FFFFFF",
+    "contents": [
+       "개인용 어플리케이션은 꼭 만들도록",
+       "여러 가지 테스트해볼 수 있음"
+     ]
+  }
+]

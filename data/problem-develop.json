@@ -1,0 +1,50 @@
+[
+  {
+    "importance": "NORMAL",
+    "title": "Multi Device",
+    "color": "#81C784",
+    "contents": "레이아웃 및 DPI 생각"
+  },
+  {
+    "importance": "NORMAL",
+    "title": "UI & UX",
+    "color": "#81C784",
+    "contents": "어떻게 만들지 ... 이렇게 만들어주세요"
+  },
+  {
+    "importance": "WARNING",
+    "title": "삽질중?",
+    "color": "#FFB74D",
+    "contents": "적당한 구글링 및 3rd Paty Library 검토"
+  },
+  {
+    "importance": "WARNING",
+    "title": "다양한 삽질 대비",
+    "color": "#FFB74D",
+    "contents": "SVN, Git 쓰셨나요?"
+  },
+  {
+    "importance": "WARNING",
+    "title": "Deprecated",
+    "color": "#FFB74D",
+    "contents": "API, 3rd Paty Library"
+  },
+  {
+    "importance": "WARNING",
+    "title": "Version Issue",
+    "color": "#FFB74D",
+    "contents": "호환성, Runtime Permission"
+  },
+  {
+    "importance": "WARNING",
+    "title": "Issue Tracking",
+    "color": "#FFB74D",
+    "contents": "유저에서 일어나는 에러 수집"
+  },
+  {
+    "importance": "CRITICAL",
+    "title": "가능한건가?",
+    "color": "#B71C1C",
+    "contents": "사전 검토, 시간내 삽질, 실제로 가능한건가?"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "importance": "RECOMMEND",
+    "title": "Newsletter",
+    "color": "#EEEEEE",
+    "contents": "Android Weekly, Twitter, Google+"
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "UI Develop",
+    "color": "#EEEEEE",
+    "contents": "uiautomatorviewer, hierarchyviewer"
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "동향 체크",
+    "color": "#EEEEEE",
+    "contents": "최근 트렌드, 쏟아지는 정보"
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "Better UI + UX",
+    "color": "#B71C1C",
+    "contents": "HIG, Animation 고려, Android / Apple스러운"
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "Better Working",
+    "color": "#B71C1C",
+    "contents": "Gantt Chart, Issue Tracking, Git, Testing"
+  },
+  {
+    "importance": "RECOMMEND",
+    "title": "Member",
+    "color": "#000000",
+    "contents": "사람은 부품이 아니다. 사람이야말로 진짜 자산이다"
+  }
+]
